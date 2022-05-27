@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', serif;
+    color: #0000008c;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*Inicio Header*/
+.topo{
+    width: 100%;
+    height: 60px;
+    background-color: #00cad1;
+}
+
+.container{
+    height: 100%;
+}
+
+.content-topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px 0 10px;
+}
+
+.logo img{
+    height: 60px;
+}
+
+.nav-bar a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-bar a:hover{
+    color: #0000008c;
+    transition: 0.4s;
+}
+
+/*Fim Header*/
+
+/*Inicio Main*/
+
+/*principal*/
+.background{
+    position: relative;
+    background-image: url(assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.titulo > h1{
+    color: white;
+    font-weight: normal;
+    font-size: 38px;
+}
+/*Fim principal*/
+
+/*Inicio Sessão sobre*/
+
+.conteudo-sobre-titulo, .conteudo-especialidades-titulo, .conteudo-contato-titulo{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.conteudo-sobre-titulo p,
+.conteudo-especialidades-titulo p,
+.conteudo-contato-titulo p{
+    text-align: center;
+    margin: 16px 0 16px 0;
+}
+
+.conteudo-sobre-titulo h2,
+.conteudo-especialidades-titulo h3,
+.conteudo-contato-titulo h3{
+    text-align: center;
+}
+
+
+.conteudo-sobre, .conteudo-especialidades, .conteudo-contato{
+    padding: 40px 20px 0;
+}
+
+.conteudo-sobre-foto-e-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-sobre-lista h3{
+    font-weight: 500;
+    margin: 18px 0 18px 0;
+}
+
+.conteudo-sobre-lista div ul{
+    padding-left: 40px;
+}
+/*Fim Sessão sobre*/
+
+/*Inicio Sessão Especialidades*/
+
+.conteudo-especialidades-imagens{
+    display: flex;
+}
+
+.conteudo-especialidades-imagens img{
+    width: 100%;
+}
+
+.conteudo-especialidades-imagens figure{
+    margin: 20px;
+    box-shadow: 0 0 12px  #0000008c;
+}
+
+.conteudo-especialidades-imagens figure figcaption{
+    text-align: center;
+    padding: 10px;    
+}
+
+.ver-horarios{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.ver-horarios a{
+    background-color: #00cad1;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    
+    padding: 10px 20px;
+}
+/*Fim Sessão Especialidades*/
+
+/*Inicio Sessão Contato*/
+
+.conteudo-contato-titulo h3, .conteudo-contato-titulo p{
+    text-align: center;
+}
+
+.map{
+    width: 100%;
+    height: 350px;
+}
+
+/*Fim Sessão Contato*/
+
+/*Inicio Footer*/
+
+#footer{
+    width: 100%;
+    height: 250px;
+    background-color: #00cad1;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo-footer p{
+    margin: 15px;
+    color: aliceblue;
+    font-weight: 600;
+}
+/*Fim Footer*/
+
+/*Responsividade com Media Queries*/
+
+@media (max-width: 1024px){
+    .background{
+        background-size: none;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .background{
+        background-size: none;
+        height: 300px;
+    }
+
+    .titulo > h1{
+        font-size: 28px;
+    }
+
+    .conteudo-especialidades-imagens{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .conteudo-sobre-foto img{
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .conteudo-especialidades-imagens{
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px){
+    .background{
+        background-size: none;
+        height: 200px;
+    }
+
+    .titulo > h1{
+        font-size: 20px;
+    }
+
+    .content-topo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topo{
+        height: 100px;
+    }
+
+    .conteudo-especialidades-imagens{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+}
+
+@media (max-width: 300px){
+    .nav-bar a{
+        font-size: 15px;
+        padding: 2px;
+    }
+}
